@@ -1,18 +1,8 @@
-%% ME 557: Project, Control Robot.
-
-%This script is the central script that continuously runs, checking for user input via the xbox controller and sending the appropriate signals to the arduino.
-
-%SETWRITEPLANE: DO NOT ALLOW USER TO SUPPLY DUPLICATE POINTS.
-%SETWRITEPLANE: ALLOW USER TO BREAK OUT OF PLANE DEFINITION PROCEDURE.
-%CONTROLLERMOVEMENT: ALLOW D-PAD MOTIONS TO CREATE MOTIONS IN THE PLANE.
-%CONTROLLERMOVEMENT: ALLOW BUMPERS TO MOVE PERPENDICULAR TO THE PLANE.
-%CONTROLLERMOVEMENT: ALLOW GRIPPER TO OPEN AND CLOSE WITH B-BUTTON.
-
-%Increase the scaling factor to write as large of letters as possible that are within the workspace.
-%If clarity is still not satisfactory, increase the middle length link and continue to increase the scaling factor until clarity is satisfactory.
+%% ME 557: CopelliaSim Project.
 
 %Clear Everything
 clear, close('all'), clc
+
 
 %% Open Serial Port.
 
@@ -41,13 +31,6 @@ M7 = [1 0 0 0; 0 1 0 0; 0 0 1 rs(1) + rs(2) + rs(3) + rs(4) + rs(5) + rs(6) + rs
 M = cat(3, M1, M2, M3, M4, M5, M6, M7);
 
 % Define the robot rotation axes.
-% w1 = [0; 0; 1];
-% w2 = [1; 0; 0];
-% w3 = [1; 0; 0];
-% w4 = [0; 0; 1];
-% w5 = [0; -1; 0];
-% w6 = [1; 0; 0];
-
 w1 = [0; 0; 1];
 w2 = [1; 0; 0];
 w3 = [-1; 0; 0];
@@ -88,8 +71,8 @@ S = [S1 S2 S3 S4 S5 S6];
 % Define the CoppeliaSim joint names.
 joint_names = {'MX64_Joint1', 'MX64_Joint2', 'AX12_Joint1', 'AX12_Joint2', 'AX12_Joint3', 'AX12_Joint4'};
 
-% Retrieve the joint handle associated with this joint.
-[~, joint_handles] = sim.simxGetObjectHandle(clientID, joint_name, sim.simx_opmode_blocking);
+% % Retrieve the joint handle associated with this joint.
+% [~, joint_handles] = sim.simxGetObjectHandle(clientID, joint_name, sim.simx_opmode_blocking);
 
 %Set the default letter.
 % Ltr = 'ABCDE';
