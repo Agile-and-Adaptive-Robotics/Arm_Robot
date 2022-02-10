@@ -77,6 +77,8 @@ joint_names = {'MX64_Joint1', 'MX64_Joint2', 'AX12_Joint1', 'AX12_Joint2', 'AX12
 %Set the default letter.
 % Ltr = 'ABCDE';
 Ltr = 'PSU';
+% Ltr = 'CODY';
+% Ltr = 'PIZZA';
 
 %Define the array of possible letters.
 Ltrs = {'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'K' 'L' 'M' 'N' 'O' 'P' 'Q' 'R' 'S' 'T' 'U' 'V' 'W' 'X' 'Y' 'Z'};
