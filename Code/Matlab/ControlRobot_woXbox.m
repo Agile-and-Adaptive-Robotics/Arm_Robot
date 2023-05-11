@@ -17,7 +17,8 @@ clear, close('all'), clc
 %% Open Serial Port.
 
 %Open the serial port.
-s = OpenSerialPort( 'COM3', 115200 );
+% s = OpenSerialPort( 'COM3', 115200 );
+s = OpenSerialPort( 'COM6', 115200 );
 
 %% Define the Geometry of the Robot.
 
@@ -54,7 +55,7 @@ S = [S1 S2 S3 S4 S5];
 %Set the default letter.
 % Ltr = 'ABCDE';
 % Ltr = 'FGHIJ';
-Ltr = 'ACDGH';
+Ltr = 'PSU';
 
 %Define the array of possible letters.
 Ltrs = {'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'K' 'L' 'M' 'N' 'O' 'P' 'Q' 'R' 'S' 'T' 'U' 'V' 'W' 'X' 'Y' 'Z'};
