@@ -1,4 +1,4 @@
-# AARL Robot_Arm
+# AARL Robot Arm
 
 ## Summary
 This repository contains files relevant to the design and operation of AARL's robot arm, which is capable of writing short words using a dry erase marker on a white board.  The purpose of this small scale robotics effort is two fold.  Firstly, it serves as an effective and engaging robotics demonstration piece at STEM community outreach events.  Secondly, it provides an example of the functionality that we expect from student robotics projects in the introductory robotics lab at Portland State University (PSU).  Although there are certainly many avenues through which our robot arm could continue to be improved, the basic framework provided in this repository is sufficient for its application as a scientific demonstration.
